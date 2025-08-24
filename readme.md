@@ -1,20 +1,44 @@
-About the project:
+# Job Board Project
 
-This project is a job board that allows users to design requirements.
+## About the Project
+This project is a **Job Board** application that allows users to design job board.
 
-Tech Stack:
-    Javascript,html,css,JQuery
+## Tech Stack
+- **JavaScript**
+- **HTML**
+- **CSS**
+- **jQuery**
 
-How to run the project:
+## How to Run the Project
 
-To run the project, you need to have Node.js installed on your system.
+### Prerequisites
+- [Node.js](https://nodejs.org/) installed on your system (for running via npm).
 
-Step 1: Download and extract the project files.
+### Option 1: Using Node.js
+1. Download and extract the project files.
+2. Open a terminal and navigate to the project directory.
+3. Install dependencies:
 
-Using npm:
-    Step 1: Open the terminal and navigate to the project directory.
-    Step 2: Run the command "npm install" to install all the dependencies.
-    Step 3: Run the command "npm start" to start the server.
-    Step 4: Open the browser and go to "http://localhost:8000" to view the project.
-Using browser:
-    open the index.html file in the browser.
+    ```bash
+    npm install
+    ```
+
+4. Start the server:
+
+    ```bash
+    npm start
+    ```
+
+5. Open your browser and go to:
+
+    ```
+    http://localhost:8000
+    ```
+
+### Option 2: Directly via Browser
+1. Download and extract the project files.
+2. Open the `index.html` file in your preferred browser.
+
+---
+
+Feel free to **customize or extend** this project to add more features, such as publishing templates, filtering jobs, or integrating with a backend API.
