@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Job Form Builder</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" >
+    <link rel="stylesheet" href="css/index.css" >
+</head>
+
+<body>
+    <header>
+        <div class="preview-block" style="width: 100px;">
+            <button id="preview-toggle"
+                style="margin-bottom:15px; padding:7px 18px; background:#007bff; color:#fff; border:none; border-radius:4px; font-size:16px; cursor:pointer;">Preview</button>
+        </div>
+        <div class="title-block" style="width: calc(100% - 100px)">
+            <h2>Job Builder</h2>
+        </div>
+    </header>
+    <div class="container" id="main-container">
+        <!-- Available Fields -->
+        <div class="fields">
+            <h4>Common fields</h4>
+            <div id="available-fields"></div>
+        </div>
+
+        <!-- Form Preview -->
+        <div class="form-preview">
+            <!-- <h3>Form Preview</h3> -->
+
+            <form id="job-form">
+                <div id="drop-placeholder" class="drop-placeholder">
+                    Drag fields here
+                </div>
+            </form>
+        </div>
+
+        <!-- Properties Panel -->
+        <div class="properties">
+            <div class="property-header">
+                <h3>Properties</h3>
+                <button id="delete-field-btn" class="delete-field-btn hide" data-delete-id="Heading2" title="Delete field">✕</button>
+            </div>
+            <div id="field-properties">Select a field to edit</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+header {
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+}
+header .preview-block {
+  width: 100px;
+}
+header .preview-block button {
+  margin: 10px;
+}
+header .title-block {
+  width: calc(100% - 100px);
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+}
+header h2 {
+  margin: 0;
+}
+.container {
+  display: flex;
+  height: 100%;
+}
+.container.preview-enabled .fields,
+.container.preview-enabled .properties {
+  visibility: hidden;
+}
+.container.preview-enabled .form-field {
+  border: none;
+  background: transparent;
+}
+.fields {
+  width: 150px;
+  padding: 0 !important;
+  height: calc(100% - 30px);
+}
+.properties {
+  width: 200px;
+}
+
+.properties .property-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.properties .delete-field-btn,
+.remove-list-item,
+.remove-option {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.remove-list-item,
+.remove-option {
+    padding: 0px 5px;
+}
+.fields {
+  height: calc(100% - 120px);
+}
+.fields h4 {
+  padding-top: 10px;
+  margin: 0;
+  height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #e1e1e1;
+}
+#available-fields {
+  height: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.fields,
+.form-preview,
+.properties {
+  padding: 15px;
+  min-height: 300px;
+}
+.form-preview {
+  width: calc(100% - 350px);
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+.drop-placeholder {
+  display: none;
+  text-align: center;
+  color: #888;
+  border: 2px dashed #b3c6e0;
+  border-radius: 8px;
+  padding: 40px 10px;
+  margin: 20px 0;
+  font-size: 18px;
+  background: #f8fbff;
+}
+.field-item {
+  padding: 8px;
+  margin: 5px 0;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  cursor: move;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.form-field {
+  margin-bottom: 15px;
+  border: 1px dashed #ccc;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.form-field.active {
+  border-color: #007bff;
+  background: #eef6ff;
+}
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.properties h3 {
+  margin-top: 0;
+}
+.ui-droppable {
+  height: 100%;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #e1e1e1;
+}
+.sortable-placeholder {
+  border: 2px dashed #007bff !important;
+  background: #eaf4ff !important;
+  min-height: 40px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.option-row {
+  position: relative;
+}
+
+.option-drag-handle,
+.option-row .remove-option {
+  display: none;
+  position: absolute;
+}
+.option-drag-handle {
+  left: 10px;
+  background-color: white;
+}
+.option-row .remove-option {
+  right: 10px;
+}
+.option-row:hover .option-drag-handle,
+.option-row:hover .remove-option {
+  display: block;
+}
+.form-field-animate {
+  box-shadow: 0 0 0 1px #90cdf4;
+  background: #e6f7ff !important;
+  transition: box-shadow 0.4s, background 0.4s;
+}
+
+.hide {
+  display: none;
+}
